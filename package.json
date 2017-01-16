@@ -1,0 +1,19 @@
+{
+  "name": "spiderauthor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HTMLchunks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrnqoe/spiderAuthor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrnqoe/spiderAuthor/issues"
+  },
+  "homepage": "https://github.com/mrnqoe/spiderAuthor#readme"
+}
