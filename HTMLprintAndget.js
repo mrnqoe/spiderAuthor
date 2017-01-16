@@ -1,6 +1,6 @@
 var https = require('https');
 
-function getHTML (options, callback) {
+module.exports = function getHTML (options, callback) {
 	var buf;
 	var requestOptions = {
 		host: options[0],
@@ -21,11 +21,4 @@ function getHTML (options, callback) {
 			console.log('Response stream complete.');
 		});
 	});
-}
-
-function printHTML (html) {
-  console.log(html);
-}
-
-var input = process.argv.slice(2);
-getHTML(input, printHTML);
+};
