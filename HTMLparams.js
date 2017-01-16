@@ -8,10 +8,11 @@ function getAndPrintHTML (options) {
 
   https.get(requestOptions, function(response){
 		response.setEncoding('utf8');
+		var buf;
 
 	 // the callback is invoked when a `data` chunk is received
 		 response.on('data', function (data) {
-			 var buf = data;
+				buf += data;
 			 console.log('Buffered data:', buf);
 		 });
 
@@ -23,5 +24,5 @@ function getAndPrintHTML (options) {
 	});
 }
 
-var input = process.argv.slice(2)
+var input = process.argv.slice(2);
 getAndPrintHTML(input);
