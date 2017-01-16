@@ -1,4 +1,4 @@
-var getHTML = require('./HTMLprintAndget');
+var getHTML = require('./GetModule');
 
 var input = process.argv.slice(2);
 
